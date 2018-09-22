@@ -40,7 +40,7 @@ to build all projects run `yarn build` in the root folder
 
 #### Package overview:
 
-* [capitano-components](https://github.com/Cap3/capitano-react/packages/capitano-components)
+* [capitano-components](https://github.com/Cap3/capitano-react/tree/master/packages/capitano-components)
   - the component collection
   - `/src` source code including snapshot tests
     - `/atoms`
@@ -57,15 +57,15 @@ to build all projects run `yarn build` in the root folder
       - components without concrete visual implementation offering often needed functionality
     - `/utils`
   - `/test` test setup
-* [capitano-theme](https://github.com/Cap3/capitano-react/packages/capitano-theme)
+* [capitano-theme](https://github.com/Cap3/capitano-react/tree/master/packages/capitano-theme)
   - theming basics, tools and theme type definitions
-* [capitano-scripts](https://github.com/Cap3/capitano-react/packages/capitano-scripts)
+* [capitano-scripts](https://github.com/Cap3/capitano-react/tree/master/packages/capitano-scripts)
   - scripts and configs
-* [capitano-components-styleguide](https://github.com/Cap3/capitano-react/packages/capitano-components-styleguide)
+* [capitano-components-styleguide](https://github.com/Cap3/capitano-react/tree/master/packages/capitano-components-styleguide)
   - styleguide generator, based on styleguidist
-* [capitano-theme-generator](https://github.com/Cap3/capitano-react/packages/capitano-theme-generator)
+* [capitano-theme-generator](https://github.com/Cap3/capitano-react/tree/master/packages/capitano-theme-generator)
   - generator tool to visually support theme-building
-* [capitano-styleguidist-components](https://github.com/Cap3/capitano-react/packages/capitano-styleguidist-components)
+* [capitano-styleguidist-components](https://github.com/Cap3/capitano-react/tree/master/packages/capitano-styleguidist-components)
   - styleguidist override components to provide theme options
 
 ### Reporting a bug
