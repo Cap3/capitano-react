@@ -1,0 +1,79 @@
+{
+  "name": "@cap3/capitano-components",
+  "version": "0.0.1-alpha.7+2761149",
+  "description": "",
+  "author": "Kalle Ott <kalle.ott@cape.de> (https://github.com/kaoDev/)",
+  "contributors": [
+    "Kalle Ott <kalle.ott@cape.de> (https://github.com/kaoDev/)"
+  ],
+  "bugs": {
+    "url": "https://github.com/cap3/capitano-react/issues"
+  },
+  "homepage": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-components",
+  "repository": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-components",
+  "license": "MIT",
+  "engines": {
+    "node": ">8.0.0"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "theme",
+    "whitelabel",
+    "emotion",
+    "emotionjs",
+    "css-in-js",
+    "cssinjs"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npx tsc -b",
+    "clean": "rimraf ./lib",
+    "test:watch": "npx jest --watch",
+    "test:coverage": "npx jest --coverage",
+    "tslint": "npx tslint src/**/{**.ts,**.tsx} --fix --force && npx tslint src/{**.ts,**.tsx} --fix --force",
+    "prettier": "npx prettier --write src/**/{**.ts,**.tsx}",
+    "prettierTest": "npx prettier -l src/**/{**.ts,**.tsx}",
+    "precommit-msg": "echo 'Pre-commit prettify and tslint --fix...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "prettier",
+    "tslint"
+  ],
+  "dependencies": {
+    "@cap3/capitano-scripts": "^0.0.1-alpha.7+2761149",
+    "@cap3/capitano-theme": "^0.0.1-alpha.9",
+    "@ctrl/tinycolor": "^2.2.0",
+    "downshift": "^2.2.2",
+    "emotion": "^9.2.10",
+    "emotion-theming": "^9.2.9",
+    "polished": "^2.1.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-emotion": "^9.2.10",
+    "react-icons": "^3.1.0",
+    "react-popper": "^1.0.2"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/test/jest-setup.js",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(svg|css|jpg|png|less)$": "<rootDir>/test/empty-module.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "2761149fc8d3351169ce18f8b948d64b4b283b2f"
+}

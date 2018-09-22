@@ -1,0 +1,82 @@
+stages:
+  - install
+  - test
+  - deploy
+
+setup node_modules cache:
+  image: node:10
+  stage: install
+  script:
+    - npm ci
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    untracked: true
+    policy: push
+    paths:
+      - node_modules/
+  tags:
+    - docker
+
+tslint:
+  image: node:10
+  script:
+    - npm ci
+    - npm run tslint
+  stage: test
+  tags:
+    - docker
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    untracked: true
+    paths:
+      - node_modules/
+    policy: pull
+
+prettier format:
+  image: node:10
+  script:
+    - npm ci
+    - npm run prettierTest
+  stage: test
+  tags:
+    - docker
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    untracked: true
+    paths:
+      - node_modules/
+    policy: pull
+
+release dry run:
+  image: node:10
+  except:
+    - master
+  script:
+    - npm ci
+    - npm run release -- --dry
+  stage: deploy   
+  tags:
+    - docker
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    untracked: true
+    paths:
+      - node_modules/
+    policy: pull
+
+release to npm:
+  image: node:10
+  only:
+    - master
+  script:
+    - npm ci
+    - npm run release
+  stage: deploy
+  tags:
+    - docker
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    untracked: true
+    paths:
+      - node_modules/
+    policy: pull

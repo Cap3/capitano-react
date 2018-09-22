@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Component render dummy snapshot with react-testing-library 1`] = `
+.emotion-2 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 8px;
+  box-sizing: border-box;
+  grid-area: input;
+  color: currentcolor;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #838383;
+  font-family: Open Sans,sans-serif;
+  font-size: 14px;
+  height: 32px;
+  color: #00aea2;
+  height: auto;
+  text-align: left;
+  display: grid;
+  grid-template-areas: "label" "input" "message";
+  grid-column-gap: 8px;
+  grid-template-columns: 1fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-rows: 18px 32px 14px;
+}
+
+.emotion-0 {
+  font-family: Open Sans,sans-serif;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  grid-area: label;
+  color: #a1a1a1;
+}
+
+.emotion-1 {
+  border-radius: 8px;
+  height: 32px;
+  width: auto;
+  box-sizing: border-box;
+  min-width: 65px;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 32px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: Open Sans,sans-serif;
+  outline: none;
+  border-color: #4d4d4d;
+  border-width: 1px;
+  border-style: solid;
+  grid-area: input;
+  color: currentcolor;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #000000;
+}
+
+.emotion-1:-moz-placeholder {
+  opacity: 0.5;
+  color: #000000;
+}
+
+.emotion-1::-moz-placeholder {
+  opacity: 0.5;
+  color: #000000;
+}
+
+.emotion-1:-ms-input-placeholder {
+  opacity: 0.5;
+  color: #000000;
+}
+
+.emotion-3 {
+  color: #00aea2;
+  font-family: Open Sans,sans-serif;
+  font-size: 12px;
+  line-height: 14;
+  grid-area: message;
+  text-align: right;
+}
+
+<label
+  class="emotion-4"
+>
+  <span
+    class="emotion-0"
+    title="Adresse"
+  >
+    Adresse
+  </span>
+  <input
+    class="emotion-1"
+    placeholder="test"
+  />
+  <svg
+    class="emotion-2"
+    fill="currentColor"
+    height="1em"
+    preserveAspectRatio="xMidYMid meet"
+    style="vertical-align: middle;"
+    viewBox="0 0 40 40"
+    width="1em"
+  >
+    <g>
+      <path
+        d="m15 27l17.7-17.7 2.3 2.3-20 20-9.3-9.3 2.3-2.3z"
+      />
+    </g>
+  </svg>
+  <div
+    class="emotion-3"
+  >
+    Adresse wurde gefunden.
+  </div>
+</label>
+`;

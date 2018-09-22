@@ -1,0 +1,45 @@
+{
+  "name": "@cap3/capitano-components-styleguide",
+  "version": "0.0.1-alpha.7",
+  "license": "MIT",
+  "private": true,
+  "description": "Styleguidist based styleguide",
+  "bugs": {
+    "url": "https://github.com/cap3/capitano-react/issues"
+  },
+  "homepage": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-components-styleguide",
+  "repository": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-components-styleguide",
+  "scripts": {
+    "start": "npx styleguidist server",
+    "clean": "rimraf ./public",
+    "build:styleguide": "npx styleguidist build",
+    "tslint": "npx tslint src/**/{**.ts,**.tsx} --fix --force && npx tslint src/{**.ts,**.tsx} --fix --force",
+    "precommit-msg": "echo 'Pre-commit prettify and tslint --fix...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "prettier",
+    "tslint"
+  ],
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@cap3/capitano-components": "^0.0.1-alpha.7",
+    "@cap3/capitano-scripts": "^0.0.1-alpha.7",
+    "@cap3/capitano-styleguidist-components": "^0.0.1-alpha.7",
+    "babel-loader": "^8.0.2",
+    "clipboard-copy": "^2.0.1",
+    "css-loader": "^1.0.0",
+    "react-docgen-typescript": "^1.9.0",
+    "react-styleguidist": "^7.3.8",
+    "style-loader": "^0.23.0",
+    "svg-sprite-loader": "^4.1.1",
+    "svgo": "^1.1.1",
+    "svgo-loader": "^2.2.0",
+    "ts-loader": "^5.1.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}

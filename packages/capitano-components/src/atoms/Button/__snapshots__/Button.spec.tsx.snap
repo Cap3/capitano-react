@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DummyComponent render dummy snapshot with react-testing-library 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  padding: 0 8px;
+  background-color: #2b597e;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Open Sans,sans-serif;
+  cursor: pointer;
+  border-radius: 8px;
+  height: 32px;
+  width: auto;
+}
+
+.emotion-0:focus {
+  background-color: rgb(85,122,152);
+}
+
+.emotion-0:hover {
+  background-color: rgb(81,127,164);
+  box-shadow: 0 1.5px 6px rgba(0,0,0,0.12),0 1.5px 6px rgba(0,0,0,0.24);
+}
+
+.emotion-0:active {
+  background-color: rgb(37,76,107);
+}
+
+<button
+  class="emotion-0"
+>
+  basic button
+</button>
+`;

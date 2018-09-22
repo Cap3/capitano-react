@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es2015",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "strict": true,
+    "allowSyntheticDefaultImports": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "declaration": true,
+    "declarationMap": true,
+    "baseUrl": "./packages",
+    "composite": true
+  }
+}

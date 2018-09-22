@@ -1,0 +1,14 @@
+{
+  "name": "@cap3/capitano-scripts",
+  "version": "0.0.1-alpha.7+2761149",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/cap3/capitano-react/issues"
+  },
+  "homepage": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-scripts",
+  "repository": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-scripts",
+  "gitHead": "2761149fc8d3351169ce18f8b948d64b4b283b2f"
+}

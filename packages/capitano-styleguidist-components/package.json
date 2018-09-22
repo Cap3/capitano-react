@@ -1,0 +1,32 @@
+{
+  "name": "@cap3/capitano-styleguidist-components",
+  "version": "0.0.1-alpha.7",
+  "private": true,
+  "main": "lib/StyleGuide.js",
+  "types": "lib/StyleGuide.d.ts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cap3/capitano-react/issues"
+  },
+  "homepage": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-styleguidist-components",
+  "repository": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-styleguidist-components",
+  "description": "override components to enable theme generation and providing in styleguidist",
+  "scripts": {
+    "build": "npx tsc -b",
+    "clean": "rimraf ./lib",
+    "tslint": "npx tslint src/**/{**.ts,**.tsx} --fix --force && npx tslint src/{**.ts,**.tsx} --fix --force",
+    "prettier": "npx prettier --write src/**/{**.ts,**.tsx}",
+    "prettierTest": "npx prettier -l src/**/{**.ts,**.tsx}",
+    "precommit-msg": "echo 'Pre-commit prettify and tslint --fix...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "prettier",
+    "tslint"
+  ],
+  "dependencies": {
+    "@cap3/capitano-theme": "^0.0.1-alpha.7",
+    "@cap3/capitano-theme-generator": "^0.0.1-alpha.7",
+    "react-icons": "^3.1.0"
+  }
+}

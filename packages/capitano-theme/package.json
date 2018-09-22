@@ -1,0 +1,51 @@
+{
+  "name": "@cap3/capitano-theme",
+  "version": "0.0.1-alpha.7+2761149",
+  "description": "Extensible and flexible theme system",
+  "author": "Kalle Ott <kalle.ott@cape.de> (https://github.com/kaoDev/)",
+  "contributors": [
+    "Kalle Ott <kalle.ott@cape.de> (https://github.com/kaoDev/)"
+  ],
+  "bugs": {
+    "url": "https://github.com/cap3/capitano-react/issues"
+  },
+  "homepage": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-theme",
+  "repository": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-theme",
+  "license": "MIT",
+  "engines": {
+    "node": ">8.0.0"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "theme",
+    "whitelabel",
+    "emotion",
+    "emotionjs",
+    "css-in-js",
+    "cssinjs"
+  ],
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "npx tsc -b",
+    "clean": "rimraf ./lib",
+    "prepare": "yarn build",
+    "tslint": "npx tslint src/**/{**.ts,**.tsx} --fix --force && npx tslint src/{**.ts,**.tsx} --fix --force",
+    "prettier": "npx prettier --write src/**/{**.ts,**.tsx}",
+    "prettierTest": "npx prettier -l src/**/{**.ts,**.tsx}",
+    "precommit-msg": "echo 'Pre-commit prettify and tslint --fix...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "prettier",
+    "tslint"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "2761149fc8d3351169ce18f8b948d64b4b283b2f"
+}

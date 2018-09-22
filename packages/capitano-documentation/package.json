@@ -1,0 +1,32 @@
+{
+  "name": "capitano-documentation",
+  "version": "1.0.0",
+  "author": "Marc Brehmer <marc.brehmer@cap3.de> (https://github.com/disco-joern/)",
+  "contributors": [
+    "Marc Brehmer <marc.brehmer@cap3.de> (https://github.com/disco-joern/)"
+  ],
+  "bugs": {
+    "url": "https://github.com/cap3/capitano-react/issues"
+  },
+  "homepage": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-documentation",
+  "repository": "https://github.com/cap3/capitano-react/tree/master/packages/capitano-documentation",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "type-check": "tsc",
+    "build:docu": "gatsby build",
+    "clean": "rimraf public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
+    "lint": "tslint 'src/**/*.{ts,tsx}' -p tsconfig.json",
+    "start": "yarn dev",
+    "test": "yarn type-check && yarn lint"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.3"
+  }
+}
