@@ -25,7 +25,7 @@ const App = () => (
 );
 ```
 
-## Playgriund
+## Playground
 
 [capitano-react.netlify.com/](https://capitano-react.netlify.com/)
 
