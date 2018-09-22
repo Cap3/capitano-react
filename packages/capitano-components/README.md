@@ -10,6 +10,7 @@ yarn add @cap3/capitano-components
 npm install @cap3/capitano-components
 ```
 
+## Usage 
 ```jsx
 import { ThemeProvider, defaultLightTheme, Button, H1 } from '@cap3/capitano-components';
 
@@ -24,6 +25,9 @@ const App = () => (
 );
 ```
 
+## Playgriund
+
+[capitano-react.netlify.com/](https://capitano-react.netlify.com/)
 
 ## Contributing
 
