@@ -1,5 +1,5 @@
 ```js
-const { Grid, EllipsisText } = require('../index');
+const { Grid, EllipsisText } = require("../index");
 
 <Grid columnCount={4} gap={20}>
   <Button>Primary</Button>

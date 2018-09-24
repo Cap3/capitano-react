@@ -1,7 +1,7 @@
 Label for form elements
 
 ```js
-const { Grid } = require('../index');
+const { Grid } = require("../index");
 
 <Grid columnCount={3} gap={20}>
   <Label size="small">small</Label>

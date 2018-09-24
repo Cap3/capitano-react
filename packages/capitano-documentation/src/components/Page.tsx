@@ -1,16 +1,16 @@
-import * as React from 'react';
-import styled from 'react-emotion';
+import * as React from "react";
+import styled from "react-emotion";
 
-import { dimensions } from '../styles/variables';
+import { dimensions } from "../styles/variables";
 
 interface Props {
   readonly className?: string;
 }
 
-const StyledPage = styled('div')({
-  display: 'block',
+const StyledPage = styled("div")({
+  display: "block",
   flex: 1,
-  position: 'relative',
+  position: "relative",
   padding: `${dimensions.containerPadding}rem`,
   marginBottom: `3rem`,
 });

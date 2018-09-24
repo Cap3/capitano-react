@@ -1,11 +1,20 @@
+# ALPHA DISCLAIMER
+
+All packages in this repository are in an early stage of development and till a
+solid foundation  
+is reached the versioning will not follow semver rules
+
 # Capitano Components
 
-# <div style="color: crimson;">ALPHA DISCLAIMER</div>
+## Playground
 
-<div style="color: crimson;">
-All packages in this repository are in an early stage of development and till a solid foundation  
-is reached the versioning will not follow semver rules
-</div>
+[capitano-react.netlify.com/](https://capitano-react.netlify.com/)
+
+## Goals
+
+This collection of components sets the focus on a powerful theming system, to
+support building white-label software software software software software
+software software software software software software software software
 
 ## Install
 
@@ -38,20 +47,16 @@ const App = () => (
 );
 ```
 
-## Playground
-
-[capitano-react.netlify.com/](https://capitano-react.netlify.com/)
-
 ## Contributing
 
-Thanks for taking the time to contribute!
-Issues and pull requests are welcome.
+Thanks for taking the time to contribute! Issues and pull requests are welcome.
 
 To make it a little easier the following guide will help.
 
 ### Project Folder Structure
 
-This project uses yarn workspaces with lerna, to install dependencies rund `yarn install` in the root folder
+This project uses yarn workspaces with lerna, to install dependencies rund
+`yarn install` in the root folder
 
 to build all projects run `yarn build` in the root folder
 
@@ -71,7 +76,8 @@ to build all projects run `yarn build` in the root folder
     - `/pages`
       - complete page layouts often needed
     - `/logic`
-      - components without concrete visual implementation offering often needed functionality
+      - components without concrete visual implementation offering often needed
+        functionality
     - `/utils`
   - `/test` test setup
 - [capitano-theme](https://github.com/Cap3/capitano-react/tree/master/packages/capitano-theme)

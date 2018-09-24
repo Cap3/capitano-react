@@ -1,5 +1,5 @@
 ```js
-const { Grid } = require('../index');
+const { Grid } = require("../index");
 <Grid columnCount={1}>
   <Heading level={1}>Headline 1</Heading>
   <Heading level={2}>Headline 2</Heading>

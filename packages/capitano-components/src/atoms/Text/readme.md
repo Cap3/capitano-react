@@ -1,5 +1,5 @@
 ```jsx
-const { Text, MonoText, EllipsisText } = require('./Text');
+const { Text, MonoText, EllipsisText } = require("./Text");
 <>
   <div>
     <Text>normal base Text</Text>

@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { graphql } from 'gatsby';
-import { Page } from '../components/Page';
-import { Container } from '../components/Container';
-import { IndexLayout } from '../layouts';
+import * as React from "react";
+import { graphql } from "gatsby";
+import { Page } from "../components/Page";
+import { Container } from "../components/Container";
+import { IndexLayout } from "../layouts";
 
 export const query = graphql`
   query PageTemplateQuery($slug: String!) {

@@ -1,11 +1,11 @@
-import 'modern-normalize';
-import '../styles/normalize';
-import * as React from 'react';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
-import { Header } from '../components/Header';
-import { LayoutRoot } from '../components/LayoutRoot';
-import { LayoutMain } from '../components/LayoutMain';
+import "modern-normalize";
+import "../styles/normalize";
+import * as React from "react";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
+import { Header } from "../components/Header";
+import { LayoutRoot } from "../components/LayoutRoot";
+import { LayoutMain } from "../components/LayoutMain";
 
 type StaticQueryProps = {
   site: {
@@ -32,7 +32,12 @@ export const IndexLayout: React.SFC = ({ children }) => (
       <LayoutRoot>
         <Helmet
           title={data.site.siteMetadata.title}
-          meta={[{ name: 'description', content: data.site.siteMetadata.description }]}
+          meta={[
+            {
+              name: "description",
+              content: data.site.siteMetadata.description,
+            },
+          ]}
         />
         <Header title={data.site.siteMetadata.title} />
         <LayoutMain>{children}</LayoutMain>

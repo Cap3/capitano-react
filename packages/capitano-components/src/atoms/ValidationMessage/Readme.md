@@ -1,7 +1,7 @@
 Validation Message for forms
 
 ```js
-const { Grid } = require('../index');
+const { Grid } = require("../index");
 
 <Grid columnCount={2} gap={20}>
   <ValidationMessage>your input is valid</ValidationMessage>

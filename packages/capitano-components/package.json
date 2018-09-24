@@ -32,8 +32,8 @@
     "test:watch": "npx jest --watch",
     "test:coverage": "npx jest --coverage",
     "tslint": "npx tslint src/**/{**.ts,**.tsx} --fix --force && npx tslint src/{**.ts,**.tsx} --fix --force",
-    "prettier": "npx prettier --write src/**/{**.ts,**.tsx}",
-    "prettierTest": "npx prettier -l src/**/{**.ts,**.tsx}",
+    "prettier": "npx prettier --write src/**/{**.ts,**.tsx,**.md,**.mdx} && npx prettier --write README.md",
+    "prettierTest": "npx prettier -l src/**/{**.ts,**.tsx,**.md,**.mdx} && npx prettier -l README.md",
     "precommit-msg": "echo 'Pre-commit prettify and tslint --fix...' && exit 0"
   },
   "pre-commit": [

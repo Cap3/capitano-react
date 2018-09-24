@@ -19,10 +19,18 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dev": "gatsby develop",
     "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
-    "lint": "tslint 'src/**/*.{ts,tsx}' -p tsconfig.json",
+    "tslint": "tslint 'src/**/*.{ts,tsx}' -p tsconfig.json",
     "start": "yarn dev",
-    "test": "yarn type-check && yarn lint"
+    "test": "yarn type-check && yarn lint",
+    "prettier": "npx prettier --write src/**/{**.ts,**.tsx,**.md,**.mdx} && npx prettier --write README.md",
+    "prettierTest": "npx prettier -l src/**/{**.ts,**.tsx,**.md,**.mdx} && npx prettier -l README.md",
+    "precommit-msg": "echo 'Pre-commit prettify and tslint --fix...' && exit 0"
   },
+  "pre-commit": [
+    "precommit-msg",
+    "prettier",
+    "tslint"
+  ],
   "engines": {
     "node": ">=8.0.0"
   },

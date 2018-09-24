@@ -726,10 +726,6 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@cap3/capitano-theme@^0.0.1-alpha.9":
-  version "0.0.1-alpha.9"
-  resolved "https://registry.yarnpkg.com/@cap3/capitano-theme/-/capitano-theme-0.0.1-alpha.9.tgz#6ec0a213c85957b703ee2e706a4878c848c2e64e"
-
 "@ctrl/tinycolor@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-2.2.0.tgz#1608c8cffa3c9e79a86167d331fa687e2ff847f5"

@@ -1,9 +1,9 @@
 Fallback loader based on cyclone emoji:
 
 ```jsx
-const styled = require('react-emotion').default;
+const styled = require("react-emotion").default;
 
-const EmojiIcon = styled('span')({
+const EmojiIcon = styled("span")({
   fontSize: 40,
 });
 

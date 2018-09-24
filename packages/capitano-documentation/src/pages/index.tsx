@@ -1,25 +1,25 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
-import { Page } from '../components/Page';
-import { Container } from '../components/Container';
-import { IndexLayout } from '../layouts';
-import styled from 'react-emotion';
-import { colors, spacing } from '../styles/variables';
-import { LogoComponent } from '../components/logo-component/logo-component';
+import * as React from "react";
+import { Link } from "gatsby";
+import { Page } from "../components/Page";
+import { Container } from "../components/Container";
+import { IndexLayout } from "../layouts";
+import styled from "react-emotion";
+import { colors, spacing } from "../styles/variables";
+import { LogoComponent } from "../components/logo-component/logo-component";
 
 const StyledContainer = styled(Container)({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
 });
 
-const H1 = styled('h1')({
+const H1 = styled("h1")({
   marginTop: spacing.huge,
   color: colors.blue,
 });
 
-const H4 = styled('h4')({
+const H4 = styled("h4")({
   marginTop: spacing.large,
   color: colors.blue,
 });
