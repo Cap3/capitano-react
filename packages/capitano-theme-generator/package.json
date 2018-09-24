@@ -1,6 +1,6 @@
 {
   "name": "@cap3/capitano-theme-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "private": true,
   "bugs": {
@@ -30,7 +30,7 @@
     "del-cli": "^1.1.0"
   },
   "dependencies": {
-    "@cap3/capitano-components": "^0.0.1",
-    "@cap3/capitano-theme": "^0.0.1"
+    "@cap3/capitano-components": "^0.0.2",
+    "@cap3/capitano-theme": "^0.0.2"
   }
 }

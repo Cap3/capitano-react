@@ -1,6 +1,6 @@
 {
   "name": "@cap3/capitano-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extensible and flexible theme system",
   "author": "Kalle Ott <kalle.ott@cape.de> (https://github.com/kaoDev/)",
   "contributors": [

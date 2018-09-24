@@ -1,6 +1,6 @@
 {
   "name": "@cap3/capitano-components-styleguide",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "private": true,
   "description": "Styleguidist based styleguide",
@@ -24,9 +24,9 @@
   "keywords": [],
   "author": "",
   "dependencies": {
-    "@cap3/capitano-components": "^0.0.1",
-    "@cap3/capitano-scripts": "^0.0.1",
-    "@cap3/capitano-styleguidist-components": "^0.0.1",
+    "@cap3/capitano-components": "^0.0.2",
+    "@cap3/capitano-scripts": "^0.0.2",
+    "@cap3/capitano-styleguidist-components": "^0.0.2",
     "babel-loader": "^8.0.2",
     "clipboard-copy": "^2.0.1",
     "css-loader": "^1.0.0",
