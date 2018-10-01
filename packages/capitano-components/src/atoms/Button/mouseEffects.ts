@@ -1,7 +1,7 @@
-import { CapitanoTheme, isColorEffect } from '@cap3/capitano-theme';
-import { ColorInput, TinyColor } from '@ctrl/tinycolor';
-import { CSSProperties } from 'react';
-import { topShadow, bottomShadow } from '../basics/shadows';
+import { CapitanoTheme, isColorEffect } from "@cap3/capitano-theme";
+import { ColorInput, TinyColor } from "@ctrl/tinycolor";
+import { CSSProperties } from "react";
+import { topShadow, bottomShadow } from "../basics/shadows";
 
 type EffectColorArgs = {
   baseColor: ColorInput;
@@ -15,7 +15,7 @@ const effectColorStyle = (
   disabled: boolean,
   swapped: boolean,
   color: string,
-  effect: 'hover' | 'focus' | 'active' | 'focus-within' | 'visited',
+  effect: "hover" | "focus" | "active" | "focus-within" | "visited",
   custom?: CSSProperties,
 ) => {
   return {
@@ -53,10 +53,10 @@ export const focusEffect = ({
     disabled,
     swapped,
     background,
-    'focus',
+    "focus",
     outline
       ? {
-          backgroundColor: 'transparent',
+          backgroundColor: "transparent",
         }
       : undefined,
   );
@@ -78,7 +78,10 @@ export const activeEffect = ({
     ).toRgbString();
   } else {
     background = base
-      .mix(theme.statusEffects.pressed.second, theme.statusEffects.pressed.factor)
+      .mix(
+        theme.statusEffects.pressed.second,
+        theme.statusEffects.pressed.factor,
+      )
       .toRgbString();
   }
 
@@ -86,10 +89,10 @@ export const activeEffect = ({
     disabled,
     swapped,
     background,
-    'active',
+    "active",
     outline
       ? {
-          backgroundColor: 'transparent',
+          backgroundColor: "transparent",
         }
       : undefined,
   );
@@ -115,8 +118,8 @@ export const hoverEffect = ({
       .toRgbString();
   }
 
-  return effectColorStyle(disabled, swapped, background, 'hover', {
+  return effectColorStyle(disabled, swapped, background, "hover", {
     boxShadow: disabled ? undefined : `${topShadow(0)}, ${bottomShadow(0)}`,
-    ...(outline ? { backgroundColor: 'transparent' } : undefined),
+    ...(outline ? { backgroundColor: "transparent" } : undefined),
   });
 };

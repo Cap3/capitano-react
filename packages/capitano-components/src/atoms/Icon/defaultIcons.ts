@@ -35,7 +35,7 @@ import {
   MdPersonOutline,
   MdWarning,
   MdClose,
-} from 'react-icons/md';
+} from "react-icons/md";
 
 export const Icons = {
   ArrowDown: MdKeyboardArrowDown,

@@ -13,7 +13,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "type-check": "tsc",
     "build:docu": "gatsby build",
     "clean": "rimraf public",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
@@ -21,7 +20,6 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "tslint": "tslint 'src/**/*.{ts,tsx}' -p tsconfig.json",
     "start": "yarn dev",
-    "test": "yarn type-check && yarn lint",
     "prettier": "npx prettier --write src/**/{**.ts,**.tsx,**.md,**.mdx} && npx prettier --write README.md",
     "prettierTest": "npx prettier -l src/**/{**.ts,**.tsx,**.md,**.mdx} && npx prettier -l README.md",
     "precommit-msg": "echo 'Pre-commit prettify and tslint --fix...' && exit 0"

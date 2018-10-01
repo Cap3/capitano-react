@@ -146,20 +146,18 @@ export const defaultLightTheme: CapitanoTheme = {
   },
   typography: {
     fontFamily: {
-      base: "Open Sans, sans-serif",
-      monospace:
-        '"Dank Mono", "Fira Code", Consolas, "Liberation Mono", Menlo, monospace',
+      primary: "sans-serif",
+      secondary: "serif",
+      monospace: '"Dank Mono", monospace',
     },
     fontSize: {
-      medium: 14,
-      large: 16,
-      small: 12,
-      h1: 32,
-      h2: 28,
-      h3: 24,
-      h4: 20,
-      h5: 16,
-      h6: 14,
+      xs: 10,
+      sm: 12,
+      md: 14,
+      lg: 17,
+      xl: 24,
+      xxl: 35,
+      xxxl: 50,
     },
   },
 };
@@ -309,20 +307,18 @@ export const defaultDarkTheme: CapitanoTheme = {
   },
   typography: {
     fontFamily: {
-      base: "Open Sans, sans-serif",
-      monospace:
-        '"Dank Mono", "Fira Code", Consolas, "Liberation Mono", Menlo, monospace',
+      primary: "sans-serif",
+      secondary: "serif",
+      monospace: '"Dank Mono", monospace',
     },
     fontSize: {
-      medium: 14,
-      large: 16,
-      small: 12,
-      h1: 32,
-      h2: 28,
-      h3: 24,
-      h4: 20,
-      h5: 16,
-      h6: 14,
+      xs: 10,
+      sm: 12,
+      md: 14,
+      lg: 17,
+      xl: 24,
+      xxl: 35,
+      xxxl: 50,
     },
   },
 };

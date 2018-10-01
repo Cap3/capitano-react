@@ -128,19 +128,18 @@ export const capitanoThemeDecoder: Decoder<CapitanoTheme> = object<
   }),
   typography: object<CapitanoTheme["typography"]>({
     fontFamily: object<CapitanoTheme["typography"]["fontFamily"]>({
-      base: string(),
+      primary: string(),
+      secondary: string(),
       monospace: string(),
     }),
     fontSize: object<CapitanoTheme["typography"]["fontSize"]>({
-      medium: number(),
-      large: number(),
-      small: number(),
-      h1: number(),
-      h2: number(),
-      h3: number(),
-      h4: number(),
-      h5: number(),
-      h6: number(),
+      xs: number(),
+      sm: number(),
+      md: number(),
+      lg: number(),
+      xl: number(),
+      xxl: number(),
+      xxxl: number(),
     }),
   }),
 });
